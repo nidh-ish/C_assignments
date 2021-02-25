@@ -1,1 +1,1 @@
-This repo contains some assignments done in C language that I did in my first year.
+This repo contains C language assignments that I did in my first year.
