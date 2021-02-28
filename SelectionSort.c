@@ -1,4 +1,5 @@
 #include<stdio.h>
+
 void Selection_sort(long long int ar[20])//declaring selection sort function
 {
 	long long int temp;  //declaring swap variable
@@ -20,20 +21,26 @@ void Selection_sort(long long int ar[20])//declaring selection sort function
 		        ar[min] = ar[i];
 		        ar[i] = temp;
 	}
+	
 	for(i = 0; i < 20; i++)//printing the respected sorted array
 	{
 		printf("%lld ",ar[i]);
 	}
+	
 	printf("\n%d %d", swap, compar);
 }
-int main()
-{
-long long int ar[20];
-int i;
-for(i = 0; i < 20; i++)
+
+int main() {
+	
+	long long int ar[20];
+	int i;
+	
+	for(i = 0; i < 20; i++)
 	{
 		scanf("%lld,", &ar[i]);//taking input from the user
 	}
-Selection_sort(ar);//calling selection sort function
-return 0;
+	
+	Selection_sort(ar);//calling selection sort function
+
+	return 0;
 }
